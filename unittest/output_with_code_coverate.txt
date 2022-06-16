@@ -1,0 +1,99 @@
+PS C:\sb\strfacts\unittest> dir
+
+
+    Directory: C:\sb\strfacts\unittest
+
+
+Mode                 LastWriteTime         Length Name
+----                 -------------         ------ ----
+-a----         6/13/2022   1:15 PM         216646 Screenshot_local_test.jpg
+-a----         6/11/2022   4:13 PM            313 test_data_acquisition.py
+-a----         6/11/2022   4:15 PM            625 test_data_analytics.py
+-a----         6/13/2022   1:07 PM           1804 test_data_ingestion.py
+
+
+PS C:\sb\strfacts\unittest> pytest --cov -k local
+================================================= test session starts ==================================================
+platform win32 -- Python 3.8.5, pytest-7.1.2, pluggy-0.13.1
+rootdir: C:\sb\strfacts\unittest
+plugins: cov-3.0.0
+collected 6 items / 3 deselected / 3 selected
+
+test_data_acquisition.py .                                                                                        [ 33%]
+test_data_analytics.py .                                                                                          [ 66%]
+test_data_ingestion.py .                                                                                          [100%]
+
+----------- coverage: platform win32, python 3.8.5-final-0 -----------
+Name                                                                                              Stmts   Miss  Cover
+---------------------------------------------------------------------------------------------------------------------
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\lib\py4j-0.10.9.3-src.zip\py4j\__init__.py               3      0   100%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\lib\py4j-0.10.9.3-src.zip\py4j\clientserver.py         281    130    54%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\lib\py4j-0.10.9.3-src.zip\py4j\compat.py                79     45    43%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\lib\py4j-0.10.9.3-src.zip\py4j\finalizer.py             41     15    63%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\lib\py4j-0.10.9.3-src.zip\py4j\java_collections.py     331    210    37%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\lib\py4j-0.10.9.3-src.zip\py4j\java_gateway.py        1085    695    36%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\lib\py4j-0.10.9.3-src.zip\py4j\protocol.py             226     59    74%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\lib\py4j-0.10.9.3-src.zip\py4j\signals.py               51     34    33%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\lib\py4j-0.10.9.3-src.zip\py4j\version.py                1      0   100%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\__init__.py                                     44      4    91%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\_globals.py                                     16      3    81%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\accumulators.py                                114     67    41%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\broadcast.py                                    97     68    30%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\cloudpickle\__init__.py                          5      0   100%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\cloudpickle\cloudpickle.py                     335    248    26%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\cloudpickle\cloudpickle_fast.py                308    234    24%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\cloudpickle\compat.py                           10      6    40%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\conf.py                                         75     29    61%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\context.py                                     404    226    44%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\files.py                                        17      4    76%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\find_spark_home.py                              28     22    21%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\java_gateway.py                                110     45    59%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\join.py                                         66     58    12%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\profiler.py                                     77     49    36%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\rdd.py                                         935    753    19%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\rddsampler.py                                   68     50    26%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\resource\__init__.py                             5      0   100%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\resource\information.py                         10      4    60%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\resource\profile.py                             89     69    22%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\resource\requests.py                           125     86    31%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\resultiterable.py                               11      5    55%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\serializers.py                                 337    193    43%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\shuffle.py                                     394    319    19%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\sql\__init__.py                                 12      0   100%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\sql\catalog.py                                 121     76    37%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\sql\column.py                                  237    120    49%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\sql\conf.py                                     41     26    37%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\sql\context.py                                 140     72    49%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\sql\dataframe.py                               639    469    27%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\sql\group.py                                    70     36    49%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\sql\pandas\__init__.py                           1      0   100%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\sql\pandas\conversion.py                       244    224     8%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\sql\pandas\group_ops.py                         53     37    30%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\sql\pandas\map_ops.py                           24     18    25%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\sql\pandas\serializers.py                      145    113    22%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\sql\pandas\types.py                            143    129    10%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\sql\readwriter.py                              306    212    31%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\sql\session.py                                 280    166    41%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\sql\streaming.py                               307    230    25%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\sql\types.py                                   716    489    32%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\sql\udf.py                                     145    117    19%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\sql\utils.py                                    90     60    33%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\sql\window.py                                   76     45    41%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\statcounter.py                                  78     58    26%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\status.py                                       22     11    50%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\storagelevel.py                                 27      8    70%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\taskcontext.py                                  93     52    44%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\traceback_utils.py                              38     14    63%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\util.py                                        109     82    25%
+C:\program1\spark-3.2.1-bin-hadoop3.2\python\pyspark\version.py                                       1      0   100%
+test_data_acquisition.py                                                                              6      1    83%
+test_data_analytics.py                                                                                9      2    78%
+test_data_ingestion.py                                                                               14      4    71%
+---------------------------------------------------------------------------------------------------------------------
+TOTAL                                                                                              9965   6601    34%
+
+
+=========================================== 3 passed, 3 deselected in 13.06s ===========================================
+PS C:\sb\strfacts\unittest> SUCCESS: The process with PID 20240 (child process of PID 15080) has been terminated.
+SUCCESS: The process with PID 15080 (child process of PID 20572) has been terminated.
+SUCCESS: The process with PID 20572 (child process of PID 12528) has been terminated.
